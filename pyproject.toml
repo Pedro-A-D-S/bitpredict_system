@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "bitwhisper"
+version = "0.1.0"
+description = "A Bitcoin Prediction System for SafeGuard Bank"
+authors = ["Pedro-A-D-S <pedroalves0409@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "source" }
+]
+
+[tool.poetry.dependencies]
+python = "3.10.12"
+pandas = "^2.1.2"
+numpy = "^1.26.1"
+tensorflow = "^2.14.0"
+matplotlib = "^3.5.2"
+mlflow = "^2.7.1"
+dvc = "^3.27.0"
+bentoml = "^1.1.7"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.26.0"
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

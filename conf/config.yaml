@@ -1,0 +1,12 @@
+save_dir: "../data/features"
+
+n_units: 128
+HORIZON: 1
+WINDOW_SIZE: 7
+output_layer: "relu"
+hidden_layer: "linear"
+loss: "mae"
+metrics: ["mae"]
+epochs: 100
+verbose: 0
+model_name: bit_predict
